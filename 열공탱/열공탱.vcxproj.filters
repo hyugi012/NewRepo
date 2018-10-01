@@ -18,5 +18,11 @@
     <ClCompile Include="[14863] 서울에서 경산까지.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="14863 이해해보기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="[14864] 줄서기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
