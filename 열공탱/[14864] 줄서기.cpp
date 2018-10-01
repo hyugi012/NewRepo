@@ -2,9 +2,10 @@
 
 using namespace std;
 
+int N, M, card[100001], valid[100001];
 int main()
 {
-	int N, M, card[100001];
+	
 	cin >> N >> M;
 
 
@@ -18,13 +19,12 @@ int main()
 		card[y]--;
 	}
 
-	for (int i = 1; i <= N-1; i++) {
-		for (int j = i + 1; j <= N; j++) {
-			if (card[i] == card[j]) {
-				cout << -1 << endl;
-				return 0;
-			}
+	for (int i = 1; i <= N; i++) {
+		if (valid[card[i]]) {
+			cout << -1 << endl;
+			return 0;
 		}
+		valid[card[i]]++;
 	}
 
 	for (int i = 1; i <= N; i++)
